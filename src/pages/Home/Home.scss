@@ -1,3 +1,11 @@
+body{
+    background-image: url(https://wallpapercave.com/wp/wp1822750.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+  
+  }
+
+
 .home{
     width: 100%;
     img{
@@ -8,12 +16,18 @@
     }
 }
 @media (max-width: 768px) {
+    body{
+        background-image: url('https://i.pinimg.com/originals/b7/80/8c/b7808c2b04d91336ae2f5b62223d8b76.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+      
+      }
+
+
     .home{
         width: 100%;
         img{
-            width: 100vw;
-            height: 82vh;
-            object-fit: contain;
+         display: none;
            
         }
     }

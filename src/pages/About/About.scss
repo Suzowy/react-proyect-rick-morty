@@ -1,9 +1,4 @@
-body{
-    background-image: url(https://wallpapercave.com/wp/wp1822750.png);
-    background-repeat: no-repeat;
-    background-size: cover;
 
-}
 
 
 
@@ -45,13 +40,14 @@ body{
     .about {
         display: flex;
     flex-direction: column;
-    justify-content: space-around;
+  padding: 20px;
     align-items: center;
       .p1,
       p {
+        width: 95%;
         background-color: rgba(0, 0, 0, 0.776);
         font-size: 10px;
-        margin: 5px;
+        margin: 10px;
       }
     }
   }

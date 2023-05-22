@@ -1,5 +1,5 @@
 nav {
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0);
   height: auto;
 
   ul {
@@ -40,9 +40,12 @@ nav {
       flex-direction: column;
       height: auto;
 
-
       li {
         width: 100%;
+        height: auto;
+        display: block;
+        justify-content: space-around;
+        text-align: center;
 
        img{
         display: none;
