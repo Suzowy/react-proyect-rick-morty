@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import "./Login.scss"
 
 const Login = ({ loginUser }) => {
-  //Definimos un estado inicial de nuestro formulario
   const INITIAL_STATE = {
     email: "",
     password: "",
@@ -29,7 +28,7 @@ const Login = ({ loginUser }) => {
 
   return (
     <div className="form">
-      <p>login for see the gallery</p>
+      <p>haz login para ver la galeria</p>
       <form onSubmit={onSubmit}>
         <label htmlFor="email">Email</label>
         

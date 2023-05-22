@@ -1,42 +1,52 @@
-.characters{
-    display: flex;
-  justify-content: space-around;
-   flex-wrap: wrap;
-   width: 100%;
-   gap: 10px;
-    .carta{
-        gap: 10px;
-        width: 20%;
-        height: 40%;
-        text-align: center;
-        color: #a5a2a2;
-        .hover{
-            
-            width: 100%;
-           text-align: center;
-           display: none;
-           
-           
-            
-        }
-        img{
-            width: 10rem;
-            height: 16rem;
-            object-fit: cover;
-        }
-        
-        &:hover {
-            .hover{
-               
-               width: 100%;
-               text-align: center;
-               transition: 0.5s;
-               display: inline ;
-               color: #a5a2a2;
-              
-            }
-        }
-    }
-      
 
-}
+
+.characters {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width:100%;
+    height:auto;
+    gap: 10px;
+  
+    .carta {
+      width: 15%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  
+      .hover {
+        text-align: center;
+        display: none;
+        background-color: #77e970ff;
+
+      }
+  
+      img {
+        width: 50%;
+        height: auto;
+        
+      }
+  
+      &:hover {
+        .hover {
+
+          width: 70%;
+          text-align: center;
+          display: inline;
+          color: rgb(0, 0, 0);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .carta {
+      width: 80%;
+      
+      img {
+        width: 100%;
+      }
+    }
+  }

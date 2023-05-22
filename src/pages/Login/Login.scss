@@ -1,19 +1,17 @@
 .form {
-    @media (max-width: 600px) {
-     
-    }
-
+   
 
     p{
-      font-size: 30px;
-      color: #95fb92;
+      font-size: 40px;
+      color: rgb(129, 235, 123);
+      background-color: rgba(0, 0, 0, 0.71);
     }
 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    color:whitesmoke;
+    color:white;
     padding: 10px;
   
     input[type="text"],
@@ -46,14 +44,48 @@
     }*/
   
     button {
-      background-color: #a1f49e;
+      background-color: #77e970ff;
       color: rgb(0, 0, 0);
       font-size: 17px;
       margin: 5px;
       font-family: 'Get Schwifty';
       padding: 5px;
+      cursor: pointer;
       &:hover {
-        background-color:#5fcf23;
+        background-color:#5cd81a;
+        
       }
     }
   }
+  @media (max-width: 600px) {
+    .form {
+   
+
+      p{
+        font-size: 25px;
+        color: rgb(129, 235, 123);
+        background-color: rgba(0, 0, 0, 0.71);
+      }
+  
+     
+    
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+       
+        margin-top: 20px;
+        margin-bottom: 20px;
+       
+      }
+      input[type="password"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    }}

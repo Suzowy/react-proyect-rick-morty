@@ -2,8 +2,19 @@
     width: 100%;
     img{
         width: 100vw;
-        height: 90vh;
+        height: 82vh;
         object-fit: cover;
-
+       
     }
 }
+@media (max-width: 768px) {
+    .home{
+        width: 100%;
+        img{
+            width: 100vw;
+            height: 82vh;
+            object-fit: contain;
+           
+        }
+    }
+  }

@@ -16,14 +16,42 @@ body{
 
 
 
-    p{
-        font-size: 20px;
+    .p1{
+        font-size: 15px;
         font-weight:lighter;
-        margin-left: 200px;
-        margin-right: 200px;
-        padding-bottom: 10px;
-        color: whitesmoke;
-        background-color: rgba(0, 0, 0, 0.819);
+        margin-left: 60px;
+        margin-right:10px;
+         color: whitesmoke;
+        font-family: 'Rock Salt';
+        background-color: rgba(0, 0, 0, 0.583);
+    }
+    p{
+        font-size: 14px;
+        font-weight:lighter;
+        margin-left: 60px;
+        margin-right: 60px;
+       
+        color: #77e970ff;
+        font-family: 'Rock Salt';
+        background-color: rgba(0, 0, 0, 0.67);
     }
 
 }
+@media (max-width: 768px) {
+    body {
+      background-size: cover;
+    }
+  
+    .about {
+        display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+      .p1,
+      p {
+        background-color: rgba(0, 0, 0, 0.776);
+        font-size: 10px;
+        margin: 5px;
+      }
+    }
+  }

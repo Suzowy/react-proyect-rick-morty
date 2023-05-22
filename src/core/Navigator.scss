@@ -17,19 +17,39 @@ nav {
 
 
       img {
-        width: 50%;
+        width: 60%;
         
-       
       }
 
       a {
         text-transform: uppercase;
         text-decoration: none;
         color: #00afe6;
-        font-weight: bold;
+        font-weight:bold;
 
         &:hover {
           color: #5fcf23;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  nav {
+    ul {
+      flex-direction: column;
+      height: auto;
+
+
+      li {
+        width: 100%;
+
+       img{
+        display: none;
+       }
+
+        a {
+          font-size: 20px;
         }
       }
     }
