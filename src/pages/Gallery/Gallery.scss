@@ -55,7 +55,7 @@
       width:100%;
       height:auto;
       gap: 20px;
-      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.312);
     
       .carta {
         width: 30%;
@@ -87,6 +87,7 @@
             font-family: 'Rock Salt';
             text-align: center;
             display: inline;
+            width: 100%;
             color: rgb(0, 0, 0);
           }
         }
