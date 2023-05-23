@@ -23,7 +23,7 @@ const Gallery = () => {
   return (
     <div>
       <button onClick={handlePreviousPage} className="boton1">Anterior</button>
-      <button onClick={handleNextPage} className="boton2">Siguiente</button>
+      
       <div className="characters">
         {characters.length > 0 ? (
           characters.map((character) => (
@@ -40,7 +40,7 @@ const Gallery = () => {
           <p>Cargando personajes...</p>
         )}
       </div>
-      <button onClick={handlePreviousPage} className="boton1">Anterior</button>
+      
       <button onClick={handleNextPage} className="boton2">Siguiente</button>
     </div>
   )};

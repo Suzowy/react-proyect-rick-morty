@@ -7,7 +7,7 @@ nav {
   justify-content: center;
   text-align: center;
   height: auto;
-
+  background-image: url('https://wallpapercave.com/wp/wp1822750.png');
   ul {
     height: 15vh;
     display: flex;
@@ -42,21 +42,21 @@ nav {
 }
 @media (max-width: 600px) {
   nav {
+    .titulo{
+      width: 70%;
+    }
     ul {
       flex-direction: column;
       height: auto;
 
       li {
-        width: 100%;
-        height: auto;
         display: block;
         text-align: center;
 .rick{
   display: none;
 }
         a {
-          color: rgb(146, 249, 223);
-          font-size:20px;
+          font-size:23px;
           justify-content: space-around;
         }
       }
