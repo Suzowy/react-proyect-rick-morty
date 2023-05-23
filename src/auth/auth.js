@@ -22,5 +22,6 @@ export const login = ({ email, password }) => {
       (user) => user.email === email && user.password === password
     );
     if (user === undefined) throw new Error();
+    return user;
   };
   

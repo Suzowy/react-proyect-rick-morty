@@ -1,15 +1,17 @@
 
 
 .characters {
+  background-color: aquamarine;
     display: inline-flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     width:100%;
     height:auto;
     gap: 10px;
   
     .carta {
-      width: 15%;
+      background-color: aliceblue;
+      width: 20%;
       height: auto;
       display: flex;
       flex-direction: column;
@@ -17,7 +19,7 @@
       text-align: center;
   
       .hover {
-        text-align: center;
+       
         display: none;
         background-color: #77e970ff;
 
