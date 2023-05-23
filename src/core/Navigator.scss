@@ -1,5 +1,11 @@
+.titulo{
+  width:50%;
+  height: auto;
+}
+
 nav {
-  background-color: rgba(0, 0, 0, 0);
+  justify-content: center;
+  text-align: center;
   height: auto;
 
   ul {
@@ -16,9 +22,9 @@ nav {
       width: 100%;
 
 
-      img {
-        width: 60%;
-        
+      .rick {
+        width:60%;
+        border-radius: 30%;
       }
 
       a {
@@ -37,22 +43,17 @@ nav {
 @media (max-width: 600px) {
   nav {
     ul {
-      flex-direction: column;
+      flex-direction: row;
       height: auto;
 
       li {
         width: 100%;
         height: auto;
         display: block;
-        justify-content: space-around;
         text-align: center;
 
-       img{
-        display: none;
-       }
-
         a {
-          font-size: 20px;
+          font-size:20px;
         }
       }
     }
