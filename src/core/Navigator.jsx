@@ -24,7 +24,12 @@ const Navigator = ({ authenticated, logoutUser }) => {
         </li>
         {authenticated ? (
           <li>
-            <button class="logout" onClick={logoutUser}>Logout</button>
+          <img
+    src="https://www.pngall.com/wp-content/uploads/9/Red-Start-Button-PNG.png"
+    alt="Logout"
+    className="logout"
+    onClick={logoutUser}
+  />
           </li>
         ) : (
           <li>

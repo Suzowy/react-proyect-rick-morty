@@ -43,7 +43,7 @@ nav {
 @media (max-width: 600px) {
   nav {
     ul {
-      flex-direction: row;
+      flex-direction: column;
       height: auto;
 
       li {
@@ -51,8 +51,11 @@ nav {
         height: auto;
         display: block;
         text-align: center;
-
+.rick{
+  display: none;
+}
         a {
+          color: rgb(146, 249, 223);
           font-size:20px;
         }
       }

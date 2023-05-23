@@ -21,25 +21,28 @@ const Gallery = () => {
   };
 
   return (
-    <div className="characters">
-      {characters.length > 0 ? (
-        characters.map((character) => (
-          <div
-            onMouseOver={() => setH2(character.name)}
-            key={character._id}
-            className="carta"
-          >
-            <h2 className="hover">{h2}</h2>
-            <img src={character.image} alt={character.name} />
-          </div>
-        ))
-      ) : (
-        <p>Cargando personajes...</p>
-      )}
-<button onClick={handlePreviousPage}>Anterior</button>
-      <button onClick={handleNextPage}>Siguiente</button>
+    <div>
+      <button onClick={handlePreviousPage} className="boton1">Anterior</button>
+      <button onClick={handleNextPage} className="boton2">Siguiente</button>
+      <div className="characters">
+        {characters.length > 0 ? (
+          characters.map((character) => (
+            <div
+              onMouseOver={() => setH2(character.name)}
+              key={character._id}
+              className="carta"
+            >
+              <h2 className="hover">{h2}</h2>
+              <img src={character.image} alt={character.name} />
+            </div>
+          ))
+        ) : (
+          <p>Cargando personajes...</p>
+        )}
+      </div>
+      <button onClick={handlePreviousPage} className="boton1">Anterior</button>
+      <button onClick={handleNextPage} className="boton2">Siguiente</button>
     </div>
-  );
-};
-
+  )};
+  
 export default Gallery;

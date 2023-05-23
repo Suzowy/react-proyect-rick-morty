@@ -9,5 +9,35 @@ body {
   background-color: black;
   font-family:'Get Schwifty';
 }
+.logout{
+  width:80px;
+  cursor: pointer;
+}
 
 
+.boton1 {
+  background-color: rgb(69, 254, 88);
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 30px;
+  
+margin: 20px;
+ }
+
+ .boton2 {
+  background-color: rgb(69, 254, 88);
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+ border-radius: 30px;
+  margin: 20px;
+
+ }
+
+ @media (max-width: 600px) {
+.logout{
+  border-radius: 100%;
+  width: 50px;
+}
+ }
