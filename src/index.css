@@ -10,7 +10,8 @@ body {
   font-family:'Get Schwifty';
 }
 .logout{
-  width:80px;
+  width:50px;
+  border-radius: 100%;
   cursor: pointer;
 }
 
@@ -37,6 +38,8 @@ margin: 20px;
  @media (max-width: 600px) {
 .logout{
   border-radius: 100%;
-  width: 50px;
+  width: 30px;
 }
+
+
  }

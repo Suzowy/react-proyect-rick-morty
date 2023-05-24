@@ -5,7 +5,7 @@
     display: inline-flex;
     justify-content:space-around;
     flex-wrap: wrap;
-    width:80%;
+    width:85%;
     height:auto;
     gap:10px;
     margin-bottom:20px;
@@ -13,6 +13,7 @@
     .carta {
       
       width: 20%;
+      border-radius: 20px;
       height: auto;
       display: flex;
       flex-direction: column;
@@ -22,7 +23,8 @@
       .hover {
        
         display: none;
-        background-color: #77e970ff;
+        background-color: rgba(118, 233, 112, 0.887);
+        border-radius: 10px;
 
       }
   
@@ -41,7 +43,7 @@
           font-size: 15px;
           width: 60%;
           text-align: center;
-          display: inline;
+          display: block;
           color: rgb(0, 0, 0);
         }
       }
@@ -51,47 +53,41 @@
   @media (max-width: 768px) {
 
     .characters {
-      display: inline-flexbox;
+  
+      display: inline-flex;
+      justify-content:space-around;
       flex-wrap: wrap;
-      width:40%;
+      width:100%;
       height:auto;
-      gap: 10px;
-      background-color: rgba(0, 0, 0, 0.312);
+      gap:5px;
+      margin-bottom:10px;
     
       .carta {
-        width: 45%;
+        
+        width:20%;
         height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        background-color: rgba(0, 0, 0, 0);
-        
     
-     
+        &:hover {
+          .hover {
+            font-family: 'Rock Salt';
+            font-size: 7px;
+            width: 100%;
+            text-align: center;
+            display: block;
+            color: rgb(0, 0, 0);
+          }
+        }
     
         img {
           width: 100%;
           height: auto;
-          border-radius:20%;
-         
+          border-radius: 20px;
         }
-
-
-
-    
-        &:hover {
-          .hover {
-  
-            width: 100%;
-            font-size: 9px;
-            font-family: 'Rock Salt';
-            text-align: center;
-            display: inline;
-            width: 100%;
-            color: rgb(0, 0, 0);
-          }
         }
       }
     }
-  }
+  

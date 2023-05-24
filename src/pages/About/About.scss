@@ -1,31 +1,31 @@
 .about {
-
+  width: 50%;
+background-color: rgba(0, 0, 0, 0.377);
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction:column;
   align-items: center;
 
-
-
-  .p1 {
-    font-size: 15px;
-    font-weight: lighter;
-    margin-left: 60px;
-    margin-right: 10px;
-    color: whitesmoke;
-    font-family: 'Rock Salt';
-    background-color: rgba(0, 0, 0, 0.583);
-  }
+h2{
+  color: #83d32f;
+  font-size: 30px;
+  font-family: 'Rock Salt';
+  text-align: center;
+}
 
   p {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: lighter;
-    margin-left: 60px;
-    margin-right: 60px;
-
-    color: #77e970ff;
+    text-align:center;
+    margin-left: 100px; 
+    margin-right: 100px;
+    color: whitesmoke;
     font-family: 'Rock Salt';
-    background-color: rgba(0, 0, 0, 0.67);
+    background-color: rgba(0, 0, 0, 0.614);
+  }
+
+ 
+  .trailer{
+padding: 20px;
   }
 
 }
@@ -42,16 +42,23 @@
     padding: 20px;
     align-items: center;
 
-    .p1,
+
     p {
       width: auto;
       background-color: rgba(0, 0, 0, 0.776);
       font-size: 10px;
       margin: 10px;
     }
-
-    .video {
-      width: auto;
+h2{
+  width: auto;
+  font-size: 15px;
+  margin: 10px;
+}
+    .trailer {
+     justify-content: center;
+     width: 10%;
+    
+      
     }
   }
 }
