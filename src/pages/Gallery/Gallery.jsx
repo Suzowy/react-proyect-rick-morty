@@ -22,7 +22,7 @@ const Gallery = () => {
 
   return (
     <div>
-      <button onClick={handlePreviousPage} className="boton1">Anterior</button>
+      <button onClick={handlePreviousPage} className="boton1"  >ver mas</button>
 
       <div className="characters">
         {characters.length > 0 ? (
@@ -39,7 +39,7 @@ const Gallery = () => {
         )}
       </div>
 
-      <button onClick={handleNextPage} className="boton2">Siguiente</button>
+      <button onClick={handleNextPage} className="boton2"> ver mas</button>
     </div>
   );
 };
