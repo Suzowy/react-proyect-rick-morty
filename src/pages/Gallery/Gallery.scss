@@ -1,93 +1,85 @@
-
-
 .characters {
-  
+  margin-top: 20px;
+  background-color: rgb(0, 0, 0);
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 86%;
+  height: auto;
+  gap: 10px;
+  margin-bottom: 20px;
+
+  .carta {
+    background-color: rgba(171, 255, 248, 0.298);
+    width: 17%;
+
+    border-radius: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: "Rock Salt";
+
+    img {
+      width: 70%;
+      height: auto;
+    }
+
+    h2 {
+      width: 90%;
+      color: rgb(71, 195, 233);
+      font-size: 17px;
+    }
+
+    .location {
+      width: 80%;
+      color: rgb(255, 255, 255);
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .characters {
     display: inline-flex;
-    justify-content:space-around;
+    justify-content: space-around;
     flex-wrap: wrap;
-    width:85%;
-    height:auto;
-    gap:10px;
-    margin-bottom:20px;
-  
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    margin-bottom: 20px;
+
     .carta {
-      
-      width: 20%;
+      background-color: rgba(0, 0, 0, 0.756);
+      width: 30%;
       border-radius: 20px;
       height: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-  
-      .hover {
-       
-        display: none;
-        background-color: rgba(118, 233, 112, 0.887);
-        border-radius: 10px;
+      font-family: "Rock Salt";
 
-      }
-  
       img {
-        width: 60%;
+        width: 100%;
         height: auto;
-        
       }
 
-     
+      h2 {
+        color: rgb(68, 190, 227);
+        font-size: 7px;
+      }
 
-  
-      &:hover {
-        .hover {
-          font-family: 'Rock Salt';
-          font-size: 15px;
-          width: 60%;
-          text-align: center;
-          display: block;
-          color: rgb(0, 0, 0);
-        }
+      .specie {
+        color: aliceblue;
+        font-size: 6px;
+      }
+
+      .location {
+        color: rgb(79, 248, 61);
+        font-size: 6px;
       }
     }
   }
-
-  @media (max-width: 768px) {
-
-    .characters {
-  
-      display: inline-flex;
-      justify-content:space-around;
-      flex-wrap: wrap;
-      width:100%;
-      height:auto;
-      gap:5px;
-      margin-bottom:10px;
-    
-      .carta {
-        
-        width:20%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    
-        &:hover {
-          .hover {
-            font-family: 'Rock Salt';
-            font-size: 7px;
-            width: 100%;
-            text-align: center;
-            display: block;
-            color: rgb(0, 0, 0);
-          }
-        }
-    
-        img {
-          width: 100%;
-          height: auto;
-          border-radius: 20px;
-        }
-        }
-      }
-    }
-  
+}

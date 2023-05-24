@@ -4,18 +4,18 @@ import "./Gallery.scss";
 
 const Gallery = () => {
   const { characters, nextPage } = useContext(SWContext);
-  const [img, setImg] = useState("");
-  const [h2, setH2] = useState("");
+  const [currentCharacter, setCurrentCharacter] = useState(characters[0]);
 
   useEffect(() => {
     if (characters.length > 0) {
-      setImg(characters[0].image);
-      setH2(characters[0].name);
+      setCurrentCharacter(characters[0]);
     }
   }, [characters]);
+
   const handlePreviousPage = () => {
     nextPage();
   };
+
   const handleNextPage = () => {
     nextPage();
   };
@@ -23,26 +23,26 @@ const Gallery = () => {
   return (
     <div>
       <button onClick={handlePreviousPage} className="boton1">Anterior</button>
-      
+
       <div className="characters">
         {characters.length > 0 ? (
           characters.map((character) => (
-            <div
-              onMouseOver={() => setH2(character.name)}
-              key={character._id}
-              className="carta"
-            >
-              <h2 className="hover">{h2}</h2>
+            <div key={character._id} className="carta">
+              <h2>{character.name}</h2>
+              <p className="specie">{character.species}</p>
               <img src={character.image} alt={character.name} />
+             <p className="location">{character.location.name}</p>
             </div>
           ))
         ) : (
           <p>Cargando personajes...</p>
         )}
       </div>
-      
+
       <button onClick={handleNextPage} className="boton2">Siguiente</button>
     </div>
-  )};
-  
+  );
+};
+
 export default Gallery;
+
