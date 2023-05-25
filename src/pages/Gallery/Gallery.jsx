@@ -24,14 +24,14 @@ const Gallery = () => {
     <div>
       <button onClick={handlePreviousPage} className="boton1"  >ver mas</button>
 
-      <div className="characters">
+      <div className="ul">
         {characters.length > 0 ? (
           characters.map((character) => (
             <div key={character._id} className="carta">
               <h2>{character.name}</h2>
-              <p className="specie">{character.species}</p>
               <img src={character.image} alt={character.name} />
-             <p className="location">{character.location.name}</p>
+              <p className="specie"> {character.species}</p>
+             <p className="location">{'localizacion:'} {character.location.name}</p>
             </div>
           ))
         ) : (
