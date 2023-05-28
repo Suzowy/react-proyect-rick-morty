@@ -28,8 +28,8 @@ const Login = ({ loginUser }) => {
 
   return (
     <div className="form">
-      <p>haz login para ver la galeria</p>
-      <form onSubmit={onSubmit}>
+      
+      <form className="formulario" onSubmit={onSubmit}>
         <label htmlFor="email">Email</label>
         
         <input
@@ -46,6 +46,7 @@ const Login = ({ loginUser }) => {
           onChange={handleInput}
         />
         <button type="submit">Login</button>
+        <p>haz login para ver la galeria</p>
       </form>
     </div>
   );

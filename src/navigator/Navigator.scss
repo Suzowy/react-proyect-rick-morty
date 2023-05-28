@@ -20,6 +20,7 @@ nav {
       font-size: 30px;
       list-style-type: none;
       width: 100%;
+    
 
 
       .rick {
@@ -41,25 +42,33 @@ nav {
   }
 }
 @media (max-width: 600px) {
-  nav {
-    .titulo{
-      width: 70%;
-    }
-    ul {
+  @media (max-width: 600px) {
+    nav {
+      display: flex;
       flex-direction: column;
+      align-items: center;
+    }
+  
+    .titulo {
+      width: 80%;
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    ul {
       height: auto;
-
-      li {
-        display: block;
-        text-align: center;
-.rick{
-  display: none;
-}
-        a {
-          font-size:23px;
-          justify-content: space-around;
-        }
-      }
+      margin: 10px;
+      width: 100%;
+      display: inline;
+      flex-direction: column;
+    }
+  
+    .rick {
+      display: none;
+    }
+  
+    a {
+      font-size: 20px;
     }
   }
 }

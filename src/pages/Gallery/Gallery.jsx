@@ -4,7 +4,7 @@ import "./Gallery.scss";
 
 const Gallery = () => {
   const { characters, nextPage } = useContext(SWContext);
-  const [currentCharacter, setCurrentCharacter] = useState(characters[0]);
+  const [, setCurrentCharacter] = useState(characters[0]);
 
   useEffect(() => {
     if (characters.length > 0) {

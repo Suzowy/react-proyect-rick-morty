@@ -10,4 +10,6 @@ export default function RequireAuth({ children, authenticated }) {
   }
 
   return children;
+
 }
+

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { login } from "./auth/auth";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
-import Navigator from "./core/Navigator";
+import Navigator from "./navigator/Navigator";
 import Home from "./pages/Home/Home";
 import Gallery from "./pages/Gallery/Gallery";
 import About from "./pages/About/About";

@@ -45,7 +45,8 @@ margin: 20px;
  @media (max-width: 600px) {
 .logout{
   border-radius: 100%;
-  width: 30px;
+  width: 25px;
+ 
 }
 
 
